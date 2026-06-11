@@ -40,14 +40,14 @@ export default function Header() {
 
   const topBarClass = isSticky ? "hidden" : "";
   const headerClass = isSticky ? "fixed top-0 left-0 right-0 z-50" : "relative z-20";
-  const whiteBarClass = isSticky ? "backdrop-blur-sm bg-white/95 shadow-md" : "shadow-sm shadow-slate-200";
+  const whiteBarClass = isSticky ? " bg-white " : " ";
 
   return (
     <>
       {isSticky && <div aria-hidden="true" style={{ height }} />}
       <header ref={headerRef} className={headerClass}>
         <div className={`bg-[#081d56] text-slate-100 transition-all ${topBarClass}`}>
-          <div className="bigcontainer mx-auto flex flex-col gap-3 px-0 py-1.5 text-sm md:flex-row md:items-center md:justify-between">
+          <div className="maincontainer mx-auto flex flex-col gap-3 px-0 py-1.5 text-sm md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap items-center gap-4 text-slate-200">
               <span className="inline-flex items-center gap-2">
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm">☎</span>
@@ -69,7 +69,7 @@ export default function Header() {
         </div>
 
         <div className={`${whiteBarClass}`}>
-          <div className="bigcontainer mx-auto flex flex-wrap items-center justify-between gap-4 px-22 py-3">
+          <div className="maincontainer mx-auto flex flex-wrap items-center justify-between gap-4 px-22 py-3">
             <Link href="#home" className="flex items-center gap-3 text-slate-900">
               <Image src="/KhanHomeLogo.png" alt="Khan Home Logo" width={160} height={56} priority />
             </Link>

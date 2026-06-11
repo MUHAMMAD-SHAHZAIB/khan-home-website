@@ -45,7 +45,7 @@
   }
 
   h2 {
-    @apply text-[56px]  font-medium leading-[1.1];
+    @apply text-[56px]   leading-[1.1];
   }
   h3 {
     @apply  text-4xl font-semibold;
@@ -81,8 +81,8 @@ html {
   padding-right: 20px;
 
   @media (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -93,8 +93,8 @@ html {
   padding-right: 24px;
 
   @media (min-width: 768px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
