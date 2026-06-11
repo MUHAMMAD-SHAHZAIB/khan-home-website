@@ -1,13 +1,11 @@
-import Image from "next/image";
+import Header from "./components/common/Header";
+import Hero from "./components/home/Hero";
 
 export default function Home() {
   return (
- <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Next.js!</h1>
-      <p className="text-lg text-gray-600 mb-8">
-        Get started by editing <code className="bg-gray-200 px-1 py-0.5 rounded"></code>
-      </p>
-  
-    </div>
+    <main className="bg-slate-50 text-slate-900">
+      <Header />
+      <Hero />
+    </main>
   );
 }
