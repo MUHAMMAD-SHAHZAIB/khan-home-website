@@ -1,26 +1,109 @@
+/* globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 🖌 Theme Colors */
+@theme {
+  --color-primary: #112B6D;
+  --color-secondary: #323232;
+  --color-black: #000000;
+  --color-gray:#E4E4E4;
+ --color-white: #FFFFFF;
+
+
+  /*fonts  */
+  --font-inter: var(--font-inter);
+  --font-poppins: var(--font-poppins);
+  --font-montserrat: var(--font-montserrat);
+
+
+  /* 🖥️ Custom breakpoints */
+  --breakpoint-xs: 400px;
+  --breakpoint-xs1: 500px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-md1: 868px;
+  --breakpoint-md2: 950px;
+  --breakpoint-md3: 1050px;
+  --breakpoint-lg: 1100px;
+  --breakpoint-lg2: 1200px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-poppins;
+  }
+
+  h1 {
+    @apply font-bold text-9xl;
+  }
+
+  h2 {
+    @apply text-[56px]  font-medium leading-[1.1];
+  }
+  h3 {
+    @apply  text-4xl font-semibold;
+  }
+  h4 {
+    @apply text-3xl font-medium;
+  }
+  h5 {
+    @apply text-[22px] font-medium;
+  }
+  h6 {
+    @apply text-[20px] ;
+  }
+  p {
+    @apply text-[16px] font-normal ;
+  }
+
+  /* .margins {
+    @apply mx-[10px] md:mx-[30px];
+  } */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.bigcontainer {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.maincontainer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (min-width: 768px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
