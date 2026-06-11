@@ -20,7 +20,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center gap-4 text-slate-200">
             <span className="inline-flex items-center gap-2">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm">☎</span>
-              +971 54 204 6142
+              +971 54 204 6142 abc
             </span>
             <span className="inline-flex items-center gap-2">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm">✉</span>
