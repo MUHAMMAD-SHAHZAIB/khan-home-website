@@ -46,7 +46,7 @@ export default function Header() {
     <>
       {isSticky && <div aria-hidden="true" style={{ height }} />}
       <header ref={headerRef} className={headerClass}>
-        <div className={`bg-[#081d56] text-slate-100 transition-all ${topBarClass}`}>
+        <div className={`bg-[#112B6D] text-slate-100 transition-all ${topBarClass}`}>
           <div className="bigcontainer mx-auto flex flex-col gap-3 px-0 py-1.5 text-sm md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap items-center gap-4 text-slate-200">
               <span className="inline-flex items-center gap-2">
@@ -60,21 +60,21 @@ export default function Header() {
             </div>
 
             <div className="flex items-center gap-3 text-slate-200">
-              <a href="https://facebook.com" aria-label="Facebook" className="transition hover:text-white">FB</a>
-              <a href="https://instagram.com" aria-label="Instagram" className="transition hover:text-white">IG</a>
-              <a href="https://youtube.com" aria-label="YouTube" className="transition hover:text-white">YT</a>
-              <a href="https://tiktok.com" aria-label="TikTok" className="transition hover:text-white">TT</a>
+              <a href="https://facebook.com" aria-label="Facebook" className="transition hover:text-white">f</a>
+              <a href="https://instagram.com" aria-label="Instagram" className="transition hover:text-white">ig</a>
+              <a href="https://youtube.com" aria-label="YouTube" className="transition hover:text-white">yt</a>
+              <a href="https://tiktok.com" aria-label="TikTok" className="transition hover:text-white">tt</a>
             </div>
           </div>
         </div>
 
         <div className={`${whiteBarClass}`}>
-          <div className="bigcontainer mx-auto flex flex-wrap items-center justify-between gap-4 px-22 py-3">
+          <div className="bigcontainer mx-auto flex flex-wrap items-center justify-between gap-4 py-3">
             <Link href="#home" className="flex items-center gap-3 text-slate-900">
               <Image src="/KhanHomeLogo.png" alt="Khan Home Logo" width={160} height={56} priority />
             </Link>
 
-            <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
+            <nav className="hidden items-center gap-7 text-xs font-medium text-slate-700 lg:flex">
               {navLinks.map((link) => (
                 <Link key={link.label} href={link.href} className="transition hover:text-[#0f3471]">
                   {link.label}
@@ -83,7 +83,10 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center gap-3">
-              <Link href="#contact" className="hidden rounded-full bg-[#0f3471] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#0f3471]/10 transition hover:bg-[#112b6d] md:inline-flex">
+              <a href="tel:+971542046142" className="hidden h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-xs text-slate-600 md:inline-flex">
+                ☎
+              </a>
+              <Link href="#contact" className="hidden rounded-full bg-[#303030] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-950/10 transition hover:bg-[#112B6D] md:inline-flex">
                 Get a Quote
               </Link>
               <button type="button" className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2 text-slate-700 shadow-sm transition hover:bg-slate-50 md:hidden">
