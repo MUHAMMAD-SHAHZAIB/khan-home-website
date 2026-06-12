@@ -12,11 +12,11 @@ const Footer = () => {
               Ready to Transform Your Outdoor Indoor Spaces
             </h2>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#contact" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#112B6D]">Request A Quote</a>
+              <a href="#contact" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-primary">Request A Quote</a>
               <a href="tel:+971542046142" className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold">Call Us<br />+971 54 204 6142</a>
             </div>
           </div>
-          <div className="min-h-[210px] rounded-lg bg-[#d9d9d9]" />
+          <div className="min-h-52.5 rounded-lg bg-[#d9d9d9]" />
           <address className="space-y-5 text-sm not-italic text-white/70">
             <p><strong className="block text-white">Address</strong> Dragon Mart 1, 1st Floor, Shop GF089, International City, Dubai - UAE</p>
             <p><strong className="block text-white">Email</strong> info@khanhome.ae</p>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#112B6D] py-4 text-center text-xs text-white/70">
+      <div className="bg-primary py-4 text-center text-xs text-white/70">
         ©2026 All Rights Reserved.
       </div>
     </footer>
